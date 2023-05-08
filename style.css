@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 10rem 1.5rem 2rem;
+    background: url('./images/bg-header-mobile.png');
+    background-position: top center;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 4rem;
+}
+
+.title, .main-title{
+    font-size: 3rem;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1rem;
+}
+
+.title span{
+    display: block;
+}
+
+.header-para,
+.main-para,
+.box-para,
+.card-para{
+    font-size: 1.8rem;
+    color: var(--Grayish-Blue);
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.btn{
+    display: block;
+    padding: .7rem 2.7rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--White);
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.ios{
+    background-color: var(--Strong-Cyan);
+    box-shadow: 1px 1px 12px var(--Strong-Cyan);
+}
+
+.mac{
+    background-color: var(--Light-Blue);
+    box-shadow:1px 1px 12px var(--Light-Blue);
+}
+
+main{
+    text-align: center;
+    padding: 8rem 1.5rem 1.5rem;
+}
+
+.desktop{
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+}
+
+.box-title, .card-title{
+    font-size: 2rem;
+    color: var(--Dark-Grayish-Blue);
+    margin: 2rem 0;
+}
+
+.devices{
+    width: 100%;
+    height: 100%;
+    margin: 4rem 0;
+}
+
+.partner{
+    display: block;
+    margin: 4rem auto;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(180deg, var(--Grayish-Blue), var(--White));
+    padding: 1.5rem;
+}
+
+.footer-logo{
+    width: 8rem;
+    height: 8rem;
+    margin: 4rem auto;
+}
+
+.link{
+    display: block;
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin: 1rem auto;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.icon{
+    display: block;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 2.8rem;
+}
+
+.icon:hover,
+.link:hover{
+    color: var(--Strong-Cyan);
+}
+
+.attribution{
+    font-size: 1.8rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.attribution > a {
+    color: var(--Strong-Cyan);
+    text-decoration: none;
+}
+
+
+@media screen and (min-width:768px) {
+    header{
+        background: url('./images/bg-header-desktop.png') ;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 100% 70%;
+    }
+
+    .logo{
+        margin: 10rem  auto 8rem;
+    }
+
+    .title span{
+        display: inline-block;
+    }
+
+    .header-para span,
+    .main-para span,
+    .box-para span{
+        display: block;
+    }
+
+    .header-btns,
+    .main-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .btn{
+        margin: 2rem 0;
+    }
+
+    .desktop-features-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+        transform: translateX(-4rem);
+    }
+
+    .features-box{
+        text-align: left;
+    }
+
+    .access-title{
+        margin-top: 6rem;
+    }
+
+    .devices{
+        width: 75rem;
+        height: 50rem;
+    }
+
+    .tools-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+
+    .card:not(:first-child) .tool-icon{
+        padding-bottom: .8rem;
+    }
+
+    .partners-box{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 2rem;
+    }
+
+    .main-btns{
+        margin-bottom: 4rem;
+    }
+
+    .footer-box,
+    .footer-links{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
+    .footer-links{
+        text-align: left;
+        align-items: start;
+        gap: 3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
